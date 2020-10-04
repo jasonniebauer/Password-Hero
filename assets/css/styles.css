@@ -86,8 +86,12 @@ main {
     font-family: monospace;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .generate-button {
-    margin-right: 0.25rem;
+    margin-right: 0.5rem;
     background: none;
     border: none;
     line-height: 10px;
