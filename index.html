@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jason Niebauer">
+    <meta name="copyright" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <!--<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"/>-->
+    <title>Password Hero</title>
+    <link
+      rel="stylesheet"
+      href="./assets/css/reset.min.css">
+    <link
+      rel="stylesheet"
+      href="./assets/css/styles.css">
+  </head>
+  <body>
+    <nav>
+      <svg class="logo-icon" viewBox="0 0 24 24">
+        <path fill="#0366d6" d="M12,8A1,1 0 0,1 13,9A1,1 0 0,1 12,10A1,1 0 0,1 11,9A1,1 0 0,1 12,8M21,11C21,16.55 17.16,21.74 12,23C6.84,21.74 3,16.55 3,11V5L12,1L21,5V11M12,6A3"></path>
+        <path fill="#ffffff" d="M21,11C21,16.55 17.16,21.74 12,23C6.84,21.74 3,16.55 3,11V5L12,1L21,5V11M12,21C15.75,20 19,15.54 19,11.22V6.3L12,3.18L5,6.3V11.22C5,15.54 8.25,20 12,21M12,6A3,3 0 0,1 15,9C15,10.31 14.17,11.42 13,11.83V14H15V16H13V18H11V11.83C9.83,11.42 9,10.31 9,9A3,3 0 0,1 12,6M12,8A1,1 0 0,0 11,9A1,1 0 0,0 12,10A1,1 0 0,0 13,9A1,1 0 0,0 12,8Z"></path>
+      </svg>
+      <span class="logo-text">PasswordHero</span>
+    </nav>
+    <main>
+      <div class="intro">
+        <small class="subtitle">Password Generator Tool</small>
+        <h1 class="tagline">Generate a secure password</h1>
+        <p class="description">Use the online password generator to instantly create a secure, random password.</p>
+      </div>
+      <div class="password-generator">
+        <div class="generated-password">
+          <form class="password-form">
+            <input
+              type="text"
+              id="passwordField"
+              class="password"/>
+          </form>
+          <button
+            class="generate-button"
+            id="generateButton">
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+              <path fill="#24292e" d="M17.65,6.35C16.2,4.9 14.21,4 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20C15.73,20 18.84,17.45 19.73,14H17.65C16.83,16.33 14.61,18 12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6C13.66,6 15.14,6.69 16.22,7.78L13,11H20V4L17.65,6.35Z" />
+            </svg>
+          </button>
+          <button
+            class="button"
+            id="copyButton">
+            Copy Password
+          </button>
+        </div>
+        <form
+          id="customizationForm"
+          class="generator">
+          <h2>Customize your password</h2>
+          <div>
+            <label for="lengthField">Password Length</label>
+            <input
+              type="number"
+              id="lengthField"
+              class="length-field"
+              step="1"
+              min="8"
+              max="100">
+            <input
+              type="range"
+              id="lengthSlider"
+              step="1"
+              min="8"
+              max="100">
+          </div>
+          
+          <label>Uppercase</label>
+          <input
+            type="checkbox"
+            id="uppercaseField"
+            checked>
+          <label>Lowercase</label>
+          <input
+            type="checkbox"
+            id="lowercaseField"
+            checked>
+          <label>Numbers</label>
+          <input
+            type="checkbox"
+            id="numbersField"
+            checked>
+          <label>Symbols</label>
+          <input
+            type="checkbox"
+            id="symbolsField"
+            checked>
+        </form>
+      </div>
+      <p>All passwords are generated on your device and NOT sent across the internet.</p>
+    </main>
+    <script
+      src="./assets/js/index.js"
+      defer></script>
+  </body>
+</html>

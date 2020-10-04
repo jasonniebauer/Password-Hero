@@ -1,0 +1,135 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: system-ui,sans-serif;
+    line-height: 1.625;
+    font-size: 18px;
+    background-color: #24292e;
+    color: #ffffff;
+}
+
+nav {
+    height: 56px;
+    display: flex;
+    padding: 0 1rem;
+    align-items: center;
+}
+
+.logo-icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 0.25rem;
+}
+
+.logo-text {
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+main {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.intro {
+    padding: 2rem 0;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.tagline {
+    margin: 0 0 0.25rem; /* override reset.css */
+}
+
+.description {
+    margin: 0; /* override reset.css */
+}
+
+.password-generator {
+    max-width: 600px;
+    margin: 0 auto;
+    /* padding: 2rem; */
+    border-radius: 3px;
+    background: #ffffff;
+    color: #24292e;
+}
+
+.generated-password {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    box-shadow: inset 0 -1px 0 #e1e4e8;
+}
+
+.password-form {
+    flex: auto;
+    text-align: left;
+}
+
+.password {
+    width: 100%;
+    padding: 8px 0px !important; /* override reset.css */
+    -webkit-appearance: none;
+    border: none;
+    margin-top: 0 !important; /* override reset.css */
+    margin-bottom: 0 !important; /* override reset.css */
+    font-size: 24px;
+    font-family: monospace;
+}
+
+.generate-button {
+    margin-right: 0.25rem;
+    background: none;
+    border: none;
+    line-height: 10px;
+}
+.button {
+    padding: 0.5rem 1rem;
+    line-height: 1.5;
+    font-size: 16px;
+    background: #0366d6;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.generator {
+    padding: 1.5rem;
+    background-color: #fafbfc;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.length-field {
+    width: 72px;
+    font-size: 18px;
+    border-radius: 3px;
+    border: 1px solid #e1e4e8;
+}
+
+input[type='range'] {
+    -webkit-appearance: none;
+    height: 8px;
+    background: #e1e4e8;
+    border-radius: 4px;
+}
+
+input[type='range']::-webkit-slider-thumb,
+input[type='range']::-moz-range-thumb {
+    -webkit-appearance: none;
+    background-color: #0366d6;
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 16px;
+    cursor: pointer; 
+}
