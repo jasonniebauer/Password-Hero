@@ -1,1 +1,1 @@
-# Password-Hero
+# Password Hero
