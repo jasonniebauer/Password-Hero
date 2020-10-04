@@ -92,6 +92,12 @@ main {
     border: none;
     line-height: 10px;
 }
+
+.generate-button svg {
+    width: 36px;
+    height: 36px;
+}
+
 .button {
     padding: 0.5rem 1rem;
     line-height: 1.5;
